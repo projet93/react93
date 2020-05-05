@@ -86,7 +86,7 @@ export const PlateauUpdate = (props: IPlateauUpdateProps) => {
     }
   };
   const [startDate, setStartDate] = useState(isNew ? new Date() : convertDateTimeFromServer(props.plateauEntity.dateDebut));
-  const [finDate, setFinDate] = useState(isNew ? new Date() : convertDateTimeFromServer(props.plateauEntity.dateFin));
+  const [finDate, setFinDate] = useState(isNew ? startDate: convertDateTimeFromServer(props.plateauEntity.dateFin));
 
   return (
     <div>
@@ -147,7 +147,7 @@ export const PlateauUpdate = (props: IPlateauUpdateProps) => {
                       <DatePicker
                         id="plateau-dateFin"
                         className="form-control"
-                        selected={convertDateTimeToServer(startDate)}
+                        selected={convertDateTimeToServer(finDate)}
                         onChange={date => setFinDate(date)}
                         showTimeSelect
                         timeFormat="HH:mm"
