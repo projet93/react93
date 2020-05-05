@@ -1,0 +1,11 @@
+id;date_debut;date_fin;programme;programme_content_type;nombre_equipe_max;nombre_equipe;statut;valid;version
+1;2020-04-28T00:49:10;2020-04-27T18:46:47;../fake-data/blob/hipster.png;image/png;33848;13944;COMPLET;true;92729
+2;2020-04-27T16:01:38;2020-04-28T11:56:03;../fake-data/blob/hipster.png;image/png;30198;55487;ENCOURS;true;18334
+3;2020-04-28T09:30:41;2020-04-28T06:16:22;../fake-data/blob/hipster.png;image/png;55008;48625;CLOTURE;false;27011
+4;2020-04-28T07:19:00;2020-04-27T22:41:53;../fake-data/blob/hipster.png;image/png;52917;69927;ENCOURS;true;77663
+5;2020-04-27T18:41:34;2020-04-27T13:46:02;../fake-data/blob/hipster.png;image/png;10939;80218;ENATTENTE;true;89980
+6;2020-04-28T01:37:02;2020-04-27T14:00:19;../fake-data/blob/hipster.png;image/png;92990;47595;ENCOURS;false;28082
+7;2020-04-27T20:27:19;2020-04-27T20:37:28;../fake-data/blob/hipster.png;image/png;79011;76464;ENATTENTE;false;92716
+8;2020-04-27T20:03:47;2020-04-27T23:37:49;../fake-data/blob/hipster.png;image/png;38010;12239;COMPLET;true;5601
+9;2020-04-27T23:02:23;2020-04-27T13:32:33;../fake-data/blob/hipster.png;image/png;85573;67401;CLOTURE;false;53843
+10;2020-04-28T12:02:39;2020-04-27T22:55:02;../fake-data/blob/hipster.png;image/png;51688;30379;COMPLET;true;22090

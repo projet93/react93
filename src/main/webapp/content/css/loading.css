@@ -84,7 +84,9 @@
     opacity: 1;
   }
 }
-
+hr {
+  margin-top: 0 !important;
+}
 .app-loading {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
@@ -149,4 +151,137 @@
 .app-loading .lds-pacman > div:nth-child(1) div:nth-child(3) {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
+}
+.jh-navbar {
+  background-color: #f72904 !important;
+}
+.jh-navlink {
+  color: #fff !important;
+}
+.jh-navlink a:hover,
+.jh-navlink a:focus {
+  color: gray;
+}
+
+/* Footer */
+#footer-fond {
+  width: 100%;
+}
+
+#footer-wrap,
+#footer {
+  background-color: transparent;
+}
+
+#footer-wrap {
+  max-width: 960px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+#footer {
+  padding: 35px 10px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer nav {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 10em;
+  margin-left: 20px;
+}
+
+#footer nav:first-child {
+  margin-left: 0;
+}
+
+#footer nav ul {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#footerliguenav {
+  padding: 0 40px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  width: 400px;
+}
+
+#footerliguenav:first-child {
+  border: none;
+  padding: 0 0;
+  width: 202px;
+}
+
+#footerliguenav:last-child {
+  border: none;
+  padding: 0 0;
+  width: 300px;
+}
+
+#footerliguenav h4 {
+  margin-bottom: 20px;
+}
+
+#footer nav li {
+  float: none;
+  padding-right: 0;
+}
+
+#footer nav li {
+  list-style-position: inside;
+}
+
+#footer nav:first-child li {
+  list-style-type: none;
+}
+
+#footer nav h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  display: inline-block;
+}
+
+#footer nav:nth-child(3) ul {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  padding-left: 0.2em;
+}
+#footerliguenav:last-child ul{
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  padding-left: 0.2em;
+}
+
+#footer nav ul li a {
+  text-transform: none;
+  font-weight: normal;
+  font-size: 0.7em;
+  margin: 0;
+}
+
+#footer nav:first-child ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 1.2em 0 0 0;
+  display: inline-block;
+  background: none;
+}
+
+#footer nav:first-child ul li:first-child a {
+  margin: 0;
+}
+
+.create-entity{
+  margin-left: 0.1em;
+}
+.log-club{
+  max-width: 90%;
 }

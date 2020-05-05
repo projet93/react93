@@ -1,0 +1,89 @@
+{
+    "name": "Plateau",
+    "fields": [
+        {
+            "fieldName": "dateDebut",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateFin",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "programme",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "any"
+        },
+        {
+            "fieldName": "nombreEquipeMax",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "nombreEquipe",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "statut",
+            "fieldType": "Statut",
+            "fieldValues": "ENATTENTE,ENCOURS,COMPLET,CLOTURE"
+        },
+        {
+            "fieldName": "valid",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "version",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "inscription",
+            "otherEntityRelationshipName": "plateau",
+            "relationshipName": "inscription"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "referent",
+            "otherEntityRelationshipName": "plateau",
+            "relationshipName": "referent",
+            "otherEntityField": "nom"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "plateau",
+            "relationshipName": "user",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "stade",
+            "otherEntityRelationshipName": "plateau",
+            "relationshipName": "stade",
+            "otherEntityField": "nom"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "categorie",
+            "otherEntityRelationshipName": "plateau",
+            "relationshipName": "categorie",
+            "otherEntityField": "section"
+        }
+    ],
+    "changelogDate": "20200428120500",
+    "entityTableName": "plateau",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

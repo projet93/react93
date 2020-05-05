@@ -1,0 +1,36 @@
+{
+  "react93App": {
+    "plateau": {
+      "home": {
+        "title": "Plateau",
+        "createLabel": "Créer un nouveau Plateau",
+        "createOrEditLabel": "Créer ou éditer un Plateau",
+        "search": "Recherche pour Plateau",
+        "notFound": "Aucun Plateau trouvé"
+      },
+      "created": "Un nouveau Plateau a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Plateau avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Plateau avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Plateau {{ id }} ?"
+      },
+      "detail": {
+        "title": "Plateau"
+      },
+      "dateDebut": "Date Debut",
+      "dateFin": "Date Fin",
+      "programme": "Programme",
+      "nombreEquipeMax": "Nombre Equipe Max",
+      "nombreEquipe": "Nombre Equipe",
+      "nombreParticipant":"Nombre Participant",
+      "statut": "Statut",
+      "valid": "Valid",
+      "version": "Version",
+      "inscription": "Inscription",
+      "referent": "Referent",
+      "user": "User",
+      "stade": "Stade",
+      "categorie": "Categorie"
+    }
+  }
+}

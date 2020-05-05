@@ -40,6 +40,16 @@ public class CacheConfiguration {
             createCache(cm, fr.district.codemax.domain.User.class.getName());
             createCache(cm, fr.district.codemax.domain.Authority.class.getName());
             createCache(cm, fr.district.codemax.domain.User.class.getName() + ".authorities");
+            createCache(cm, fr.district.codemax.domain.Club.class.getName());
+            createCache(cm, fr.district.codemax.domain.Club.class.getName() + ".stades");
+            createCache(cm, fr.district.codemax.domain.Club.class.getName() + ".categories");
+            createCache(cm, fr.district.codemax.domain.Stade.class.getName());
+            createCache(cm, fr.district.codemax.domain.Categorie.class.getName());
+            createCache(cm, fr.district.codemax.domain.Categorie.class.getName() + ".clubs");
+            createCache(cm, fr.district.codemax.domain.Referent.class.getName());
+            createCache(cm, fr.district.codemax.domain.Plateau.class.getName());
+            createCache(cm, fr.district.codemax.domain.Inscription.class.getName());
+            createCache(cm, fr.district.codemax.domain.Plateau.class.getName() + ".inscriptions");
             // jhipster-needle-ehcache-add-entry
         };
     }

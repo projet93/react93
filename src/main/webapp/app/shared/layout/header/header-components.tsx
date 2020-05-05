@@ -19,7 +19,6 @@ export const Brand = props => (
     <span className="brand-title">
       <Translate contentKey="global.title">React93</Translate>
     </span>
-    <span className="navbar-version">{appConfig.VERSION}</span>
   </NavbarBrand>
 );
 
@@ -29,6 +28,37 @@ export const Home = props => (
       <FontAwesomeIcon icon="home" />
       <span>
         <Translate contentKey="global.menu.home">Home</Translate>
+      </span>
+    </NavLink>
+  </NavItem>
+);
+export const Plateau = props => (
+  <NavItem>
+    <NavLink tag={Link} to="/plateau" className="d-flex align-items-center">
+      <FontAwesomeIcon icon="th-list" />
+      <span>
+        <Translate contentKey="global.menu.entities.plateau">Plateau</Translate>
+      </span>
+    </NavLink>
+  </NavItem>
+);
+export const Stade = props => (
+  <NavItem>
+    <NavLink tag={Link} to="/stade" className="d-flex align-items-center">
+      <FontAwesomeIcon icon="th-list" />
+      <span>
+        <Translate contentKey="global.menu.entities.stade">Stade</Translate>
+      </span>
+    </NavLink>
+  </NavItem>
+);
+
+export const Referent = props => (
+  <NavItem>
+    <NavLink tag={Link} to="/referent" className="d-flex align-items-center">
+      <FontAwesomeIcon icon="th-list" />
+      <span>
+        <Translate contentKey="global.menu.entities.referent">Referent</Translate>
       </span>
     </NavLink>
   </NavItem>

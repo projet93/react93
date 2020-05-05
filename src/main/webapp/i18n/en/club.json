@@ -1,0 +1,30 @@
+{
+  "react93App": {
+    "club": {
+      "home": {
+        "title": "Clubs",
+        "createLabel": "Create a new Club",
+        "createOrEditLabel": "Create or edit a Club",
+        "search": "Search for Club",
+        "notFound": "No Clubs found"
+      },
+      "created": "A new Club is created with identifier {{ param }}",
+      "updated": "A Club is updated with identifier {{ param }}",
+      "deleted": "A Club is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Club {{ id }}?"
+      },
+      "detail": {
+        "title": "Club"
+      },
+      "logo": "Logo",
+      "nom": "Nom",
+      "adresse": "Adresse",
+      "telephone": "Telephone",
+      "email": "Email",
+      "stade": "Stade",
+      "user": "User",
+      "categorie": "Categorie"
+    }
+  }
+}

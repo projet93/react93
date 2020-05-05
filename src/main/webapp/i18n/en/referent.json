@@ -1,0 +1,28 @@
+{
+  "react93App": {
+    "referent": {
+      "home": {
+        "title": "Referents",
+        "createLabel": "Create a new Referent",
+        "createOrEditLabel": "Create or edit a Referent",
+        "search": "Search for Referent",
+        "notFound": "No Referents found"
+      },
+      "created": "A new Referent is created with identifier {{ param }}",
+      "updated": "A Referent is updated with identifier {{ param }}",
+      "deleted": "A Referent is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Referent {{ id }}?"
+      },
+      "detail": {
+        "title": "Referent"
+      },
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "licence": "Licence",
+      "telephone": "Telephone",
+      "email": "Email",
+      "user": "User"
+    }
+  }
+}

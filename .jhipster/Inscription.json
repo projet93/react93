@@ -1,0 +1,46 @@
+{
+    "name": "Inscription",
+    "fields": [
+        {
+            "fieldName": "nombreEquipe",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "club",
+            "otherEntityRelationshipName": "inscription",
+            "relationshipName": "club",
+            "otherEntityField": "nom"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "referent",
+            "otherEntityRelationshipName": "inscription",
+            "relationshipName": "referent",
+            "otherEntityField": "nom"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "plateau",
+            "otherEntityRelationshipName": "inscription",
+            "relationshipName": "plateau",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200428120600",
+    "entityTableName": "inscription",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

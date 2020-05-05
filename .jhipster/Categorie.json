@@ -1,0 +1,42 @@
+{
+    "name": "Categorie",
+    "fields": [
+        {
+            "fieldName": "section",
+            "fieldType": "Section",
+            "fieldValues": "U6,U7,U8,U9"
+        },
+        {
+            "fieldName": "descrition",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "categorie",
+            "relationshipName": "user",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "club",
+            "otherEntityRelationshipName": "categorie",
+            "relationshipName": "club",
+            "otherEntityField": "nom",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200428120300",
+    "entityTableName": "categorie",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

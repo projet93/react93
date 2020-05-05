@@ -1,0 +1,28 @@
+{
+  "react93App": {
+    "stade": {
+      "home": {
+        "title": "Stades",
+        "createLabel": "Create a new Stade",
+        "createOrEditLabel": "Create or edit a Stade",
+        "search": "Search for Stade",
+        "notFound": "No Stades found"
+      },
+      "created": "A new Stade is created with identifier {{ param }}",
+      "updated": "A Stade is updated with identifier {{ param }}",
+      "deleted": "A Stade is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Stade {{ id }}?"
+      },
+      "detail": {
+        "title": "Stade"
+      },
+      "nom": "Nom",
+      "adresse": "Adresse",
+      "codePostal": "Code Postal",
+      "ville": "Ville",
+      "user": "User",
+      "club": "Club"
+    }
+  }
+}
