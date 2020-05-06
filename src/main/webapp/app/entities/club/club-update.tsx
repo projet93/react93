@@ -68,6 +68,7 @@ export const ClubUpdate = (props: IClubUpdateProps) => {
       if (isNew) {
         props.createEntity(entity);
       } else {
+        entity.user = clubEntity.user;
         props.updateEntity(entity);
       }
     }
@@ -177,6 +178,7 @@ export const ClubUpdate = (props: IClubUpdateProps) => {
                   name="categories"
                   value={clubEntity.categories && clubEntity.categories.map(e => e.id)}
                 >
+                  <option value="" key="0" />
                   {categories
                     ? categories.map(otherEntity => (
                         <option value={otherEntity.id} key={otherEntity.id}>

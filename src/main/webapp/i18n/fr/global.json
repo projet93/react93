@@ -136,6 +136,7 @@
     "userexists": "Login déjà utilisé !",
     "emailexists": "Email déjà utilisé !",
     "idexists": "Une nouvelle entité {{entityName}} ne peut pas avoir d'identifiant !",
+    "maxequipe": "vous avez depassé le nombre max :{{nbrmax}} d'equipe autorisé!",
     "idnull": "Identifiant invalide",
     "file": {
       "could.not.extract": "Impossible d'extraire le fichier",

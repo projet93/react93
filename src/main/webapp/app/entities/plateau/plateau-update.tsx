@@ -87,7 +87,7 @@ export const PlateauUpdate = (props: IPlateauUpdateProps) => {
   };
   const [startDate, setStartDate] = useState(isNew ? new Date() : convertDateTimeFromServer(props.plateauEntity.dateDebut));
   const [finDate, setFinDate] = useState(isNew ? startDate: convertDateTimeFromServer(props.plateauEntity.dateFin));
-
+  
   return (
     <div>
       <Row className="justify-content-center">

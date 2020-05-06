@@ -104,7 +104,7 @@ public class InscriptionServiceImpl implements InscriptionService {
         	
         
         if(nbrMax < (nbrParticipant)) {
-        	throw new BadRequestAlertException("impossible de faire l'inscription","inscription","");
+        	throw new BadRequestAlertException("impossible de faire l'inscription","inscription","maxequipe");
         }
         if((nbrMax-(nbrParticipant)) == 0)
         	plateau.setStatut(Statut.COMPLET);
