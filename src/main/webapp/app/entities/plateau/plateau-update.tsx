@@ -81,6 +81,7 @@ export const PlateauUpdate = (props: IPlateauUpdateProps) => {
       if (isNew) {
         props.createEntity(entity);
       } else {
+        entity.user = plateauEntity.user;
         props.updateEntity(entity);
       }
     }
