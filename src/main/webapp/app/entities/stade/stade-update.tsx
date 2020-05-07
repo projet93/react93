@@ -57,6 +57,8 @@ export const StadeUpdate = (props: IStadeUpdateProps) => {
       if (isNew) {
         props.createEntity(entity);
       } else {
+        entity.user = stadeEntity.user;
+        entity.club = stadeEntity.club;
         props.updateEntity(entity);
       }
     }
@@ -98,6 +100,7 @@ export const StadeUpdate = (props: IStadeUpdateProps) => {
                   }}
                 />
               </AvGroup>
+
               <AvGroup>
                 <Label id="adresseLabel" for="stade-adresse">
                   <Translate contentKey="react93App.stade.adresse">Adresse</Translate>

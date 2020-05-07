@@ -3,6 +3,11 @@ import { connect } from 'react-redux';
 import { Link, RouteComponentProps } from 'react-router-dom';
 import { Button, InputGroup, Label, Col, Row, Table } from 'reactstrap';
 import { AvForm, AvGroup, AvInput } from 'availity-reactstrap-validation';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import { Switch } from '@material-ui/core';
+
+
+
 import {
   openFile,
   byteSize,
@@ -107,22 +112,20 @@ export const Plateau = (props: IPlateauProps) => {
 
   function isInscription(plateauEntity) {
     let result = true;
-    if(isAdmin){
+    if (isAdmin) {
       return false;
     }
     if (!isAdmin && login === plateauEntity.user.login) {
       return false;
     }
     if (!isAdmin && login !== plateauEntity.user.login) {
-      plateauEntity.inscriptions.find(function(value){        
-        const loginValue = 'club'+value.club.id;
-        if(plateauEntity.id === value.plateau.id && loginValue === login)
+      plateauEntity.inscriptions.find(function (value) {
+        const loginValue = 'club' + value.club.id;
+        if (plateauEntity.id === value.plateau.id && loginValue === login)
           result = false;
-      });    
+      });
     }
-    
     return result;
-
   };
 
 
@@ -190,7 +193,7 @@ export const Plateau = (props: IPlateauProps) => {
                 </th>
                 <th className="hand" onClick={sort('statut')}>
                   <Translate contentKey="react93App.plateau.statut">Statut</Translate> <FontAwesomeIcon icon="sort" />
-                </th>                
+                </th>
                 <th>
                   <Translate contentKey="react93App.plateau.stade">Stade</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
@@ -258,7 +261,7 @@ export const Plateau = (props: IPlateauProps) => {
 
                         </Button>
                       }
-                      { isInscription(plateau) &&
+                      {isInscription(plateau) &&
                         <Button
                           tag={Link}
                           onClick={inscription(plateau)}
@@ -278,19 +281,16 @@ export const Plateau = (props: IPlateauProps) => {
                         </Button>
                       }
 
-                      {isAdmin && plateau.valid && (
-                        <Button color="success" onClick={toggleActive(plateau)}>
-                          <Translate contentKey="userManagement.activated">Activated</Translate>
-                        </Button>
+                      {isAdmin  && (
+                        <FormControlLabel
+                      control={<Switch checked={plateau.valid} onChange={toggleActive(plateau)} name="checkedB" />}
+                      label="Activited"
+                    />
                       )}
-                      {isAdmin && !plateau.valid && (
-                        <Button color="danger" onClick={toggleActive(plateau)}>
-                          <Translate contentKey="userManagement.deactivated">Deactivated</Translate>
-                        </Button>
-                      )}
+                      
 
                     </div>
-
+                   
                   </td>
                 </tr>
               ))}

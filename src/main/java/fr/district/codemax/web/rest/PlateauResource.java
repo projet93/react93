@@ -89,6 +89,7 @@ public class PlateauResource {
             log.debug("No user passed in, using current user: {}", SecurityUtils.getCurrentUserLogin());
             plateau.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse(null)).orElse(null));
         }
+        
         plateau.setStatut(Statut.ENATTENTE);
         Plateau result = plateauService.save(plateau);
         Inscription inscription = new Inscription();
@@ -117,7 +118,10 @@ public class PlateauResource {
         if (plateau.getId() == null) {
             throw new BadRequestAlertException("Invalid id", ENTITY_NAME, "idnull");
         }
-        plateau.setStatut(Statut.ENCOURS);
+        if(plateau.getNombreEquipeMax() == plateau.getNombreEquipe())
+        	plateau.setStatut(Statut.COMPLET);
+        else
+        	plateau.setStatut(Statut.ENCOURS);
         Plateau result = plateauService.save(plateau);
         return ResponseEntity.ok()
             .headers(HeaderUtil.createEntityUpdateAlert(applicationName, true, ENTITY_NAME, plateau.getId().toString()))
