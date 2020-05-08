@@ -29,6 +29,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
       {
         enforce: 'pre',
         test: /\.s?css$/,
+        exclude: /node_modules/,
         loader: 'stripcomment-loader'
       },
       {
