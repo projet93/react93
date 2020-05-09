@@ -34,7 +34,7 @@ export const Home = props => (
 );
 export const Plateau = props => (
   <NavItem>
-    <NavLink tag={Link} to="/plateau" className="d-flex align-items-center">
+    <NavLink tag={Link} to="/plateau" className="d-flex align-items-center navbar-white">
       <FontAwesomeIcon icon="th-list" />
       <span>
         <Translate contentKey="global.menu.entities.plateau">Plateau</Translate>
